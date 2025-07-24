@@ -1,9 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   value: 0
 };
-
+const fetchCount = createAsyncThunk("getCounter", async (_, thunkApi) =>{
+  
+})
 const couterSlice = createSlice({
   name: 'createSlice',
   initialState,
